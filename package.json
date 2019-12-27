@@ -14,6 +14,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "jest-transform-stub": "^2.0.0",
     "node-sass": "^4.13.0",
     "nuxt": "^2.0.0"
   },
@@ -31,5 +32,12 @@
     "prettier": "^1.16.4",
     "sass-loader": "^8.0.0",
     "vue-jest": "^4.0.0-0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.vue$": "vue-jest",
+      "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+    }
   }
 }

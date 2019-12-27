@@ -1,4 +1,11 @@
-@import './colors.scss';
+@import '~/assets/colors.scss';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 .container {
   align-items: center;
@@ -7,7 +14,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   font-family: 'Segoe UI', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-     Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    Roboto, 'Helvetica Neue', Arial, sans-serif !important;
   height: 720px;
   width: 100%;
 
@@ -29,54 +36,56 @@
       }
 
       .header {
-        font-family: 'Georgia', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Georgia', 'Source Sans Pro', -apple-system,
+          BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+          sans-serif;
         font-size: 54px;
         color: $dark-text-color;
       }
 
       .subheader {
-        font-family: 'Georgia', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Georgia', 'Source Sans Pro', -apple-system,
+          BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+          sans-serif;
         font-size: 32px;
         color: $dark-text-color;
         margin-bottom: 30px;
       }
-      
+
       .slogan {
         font-weight: 500;
         font-size: 20px;
         color: $dark-text-color;
         margin-bottom: 30px;
       }
-      
+
       .book-cta {
         background-color: $primary-color;
         border: none;
         border-radius: 12px;
         color: $light-text-color;
         font-size: 16px;
-        font-family: 'Segoe UI', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-        Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        font-family: 'Segoe UI', 'Source Sans Pro', -apple-system,
+          BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif !important;
         font-weight: 500;
         padding: 12px 20px;
       }
-    
+
       @media (max-width: 1280px) {
         .logo {
           width: 280px;
           margin-bottom: 8px;
         }
-  
+
         .header {
           font-size: 46px;
         }
-  
+
         .subheader {
           font-size: 24px;
           margin-bottom: 24px;
         }
-        
+
         .slogan {
           font-size: 15px;
           margin-bottom: 24px;
@@ -88,21 +97,21 @@
           width: 210px;
           margin-bottom: 6px;
         }
-  
+
         .header {
           font-size: 34px;
         }
-  
+
         .subheader {
           font-size: 18px;
           margin-bottom: 18px;
         }
-        
+
         .slogan {
           font-size: 12px;
           margin-bottom: 18px;
         }
-        
+
         .book-cta {
           border-radius: 9px;
           font-size: 12px;
@@ -118,7 +127,7 @@
     .content {
       display: flex;
       flex-direction: column;
-  
+
       &-inner {
         min-height: 480px;
         width: 100%;
@@ -136,12 +145,12 @@
           font-size: 24px;
           margin-bottom: 24px;
         }
-        
+
         .slogan {
           font-size: 18px;
           margin-bottom: 80px;
         }
-        
+
         .book-cta {
           border-radius: 12px;
           font-size: 20px;
@@ -151,4 +160,3 @@
     }
   }
 }
-  
