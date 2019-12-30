@@ -1,12 +1,16 @@
 <template>
   <div class="container">
     <div class="content">
-      <div class="content-inner">
-        <img class="logo" src="~/assets/images/Logo.png" />
-        <h1 class="header">NIGHT BREEZE</h1>
-        <h2 class="subheader">LADIES SALON</h2>
-        <h4 class="slogan">Let us help you find your new style.</h4>
-        <button class="book-cta">Book an Appointment</button>
+      <div class="headline">
+        <img class="headline__logo" src="~/assets/images/Logo.png" />
+        <div class="title">
+          <h1 class="title__header">NIGHT BREEZE</h1>
+          <h2 class="title__subheader">LADIES SALON</h2>
+        </div>
+        <h4 class="headline__slogan">
+          Let us help you find your new style.
+        </h4>
+        <button class="headline__bookCTA">Book an Appointment</button>
       </div>
     </div>
   </div>

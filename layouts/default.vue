@@ -1,5 +1,5 @@
 <template>
-  <div class="night-breeze">
+  <div class="nightBreeze">
     <Navbar />
     <nuxt />
   </div>
@@ -9,12 +9,13 @@
 import Navbar from '../components/Navbar'
 
 export default {
+  name: 'Default',
   components: {
     Navbar
   }
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 @import './default.scss';
 </style>
