@@ -7,3 +7,11 @@
     font-family: 'Segoe UI', 'Source Sans Pro', -apple-system,
     BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+
+button {
+    cursor: pointer;
+    
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,8 +1,8 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import HomepageHero from './HomepageHero.vue'
 
 describe('HomepageHero', () => {
-  const wrapper = mount(HomepageHero)
+  const wrapper = shallowMount(HomepageHero)
 
   it('renders the logo', () => {
     const logo = wrapper.find('.headline__logo')
