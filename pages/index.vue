@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import HomepageHero from '../components/HomepageHero'
+import HomepageHero from '@/components/homepage/HomepageHero'
 export default {
   components: {
     HomepageHero

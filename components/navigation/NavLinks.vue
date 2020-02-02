@@ -19,14 +19,19 @@
       >Events</nuxt-link
     >
     <a class="fbLink" href="https://www.facebook.com/NightBreezeSalon/">
-      <img class="fbLink__fbLogo" src="~/assets/images/fbLogo.png" />
+      <FBLogo class="fbLink__fbLogo" />
     </a>
   </div>
 </template>
 
 <script>
+import FBLogo from '@/assets/images/FBLogo.svg'
+
 export default {
   name: 'NavLinks',
+  components: {
+    FBLogo
+  },
   methods: {
     close() {
       this.$emit('close')

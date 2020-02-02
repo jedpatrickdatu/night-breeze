@@ -1,17 +1,17 @@
 <template>
   <div class="nightBreeze">
-    <NavBar />
+    <Navigation />
     <nuxt />
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
+import Navigation from '@/components/navigation'
 
 export default {
   name: 'Default',
   components: {
-    NavBar
+    Navigation
   }
 }
 </script>

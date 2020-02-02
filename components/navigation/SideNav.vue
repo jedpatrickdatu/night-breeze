@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import NavLinks from '@/components/NavLinks.vue'
+import NavLinks from './NavLinks.vue'
 import CloseIcon from '@/assets/images/mobile/CloseIcon.svg'
 
 export default {

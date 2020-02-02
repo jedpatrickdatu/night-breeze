@@ -56,9 +56,5 @@ describe('NavLinks', () => {
     expect(facebookLink.attributes().href).toEqual(
       'https://www.facebook.com/NightBreezeSalon/'
     )
-
-    const fbLogo = facebookLink.find('img.fbLink__fbLogo')
-    expect(fbLogo.exists()).toEqual(true)
-    expect(fbLogo.attributes().src).toEqual('~/assets/images/fbLogo.png')
   })
 })

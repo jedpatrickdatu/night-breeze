@@ -1,13 +1,13 @@
 import { shallowMount } from '@vue/test-utils'
-import NavBar from './NavBar.vue'
 import NavLinks from './NavLinks.vue'
-import SideNav from '@/components/SideNav.vue'
+import SideNav from './SideNav.vue'
+import Navigation from './'
 
-describe('NavBar', () => {
+describe('Navigation', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = shallowMount(NavBar, {
+    wrapper = shallowMount(Navigation, {
       stubs: ['nuxt-link']
     })
   })

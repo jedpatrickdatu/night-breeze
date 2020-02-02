@@ -3,7 +3,7 @@
 .container {
   display: flex;
   align-items: center;
-  background-image: url('../assets/images/HomepageHeroBackground.png');
+  background-image: url('../../assets/images/HomepageHeroBackground.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
   }
 
   @media (max-width: 450px) {
-    background-image: url('../assets/images/mobile/HomepageHeroBackground.png');
+    background-image: url('../../assets/images/mobile/HomepageHeroBackground.png');
     height: 520px;
   }
 

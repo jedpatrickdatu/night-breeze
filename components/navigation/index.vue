@@ -14,12 +14,12 @@
 </template>
 
 <script>
+import SideNav from './SideNav.vue'
+import NavLinks from './NavLinks.vue'
 import HamburgerMenu from '@/assets/images/mobile/HamburgerMenu.svg'
-import SideNav from '@/components/SideNav.vue'
-import NavLinks from '@/components/NavLinks.vue'
 
 export default {
-  name: 'NavBar',
+  name: 'Navigation',
   components: {
     HamburgerMenu,
     SideNav,
@@ -42,5 +42,5 @@ export default {
 </script>
 
 <style lang="sass">
-@import './NavBar.scss';
+@import './index.scss';
 </style>
