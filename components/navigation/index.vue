@@ -2,11 +2,11 @@
   <div class="navBar">
     <div class="content">
       <nuxt-link class="logoLink" to="/">
-        <img class="logoLink__logo" src="~/assets/images/LogoSmall.png" />
+        <img class="logoLink__logo" src="@/assets/images/LogoSmall.png" />
       </nuxt-link>
       <NavLinks />
-      <button @click="openSideNav" class="content__hamburgerBtn">
-        <HamburgerMenu />
+      <button @click="openSideNav" class="content__hamburgerButton">
+        <img src="@/assets/images/mobile/HamburgerMenu.svg" />
       </button>
       <SideNav :is-open="isSideNavOpen" @close="closeSideNav" />
     </div>
@@ -16,12 +16,10 @@
 <script>
 import SideNav from './SideNav.vue'
 import NavLinks from './NavLinks.vue'
-import HamburgerMenu from '@/assets/images/mobile/HamburgerMenu.svg'
 
 export default {
   name: 'Navigation',
   components: {
-    HamburgerMenu,
     SideNav,
     NavLinks
   },

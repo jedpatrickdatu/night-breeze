@@ -29,18 +29,23 @@ describe('SideNav', () => {
       })
 
       describe('close button', () => {
-        let closeIcon
+        let closeButton
 
         beforeEach(() => {
-          closeIcon = wrapper.find('.sideNavInnerContent__closeBtn')
+          closeButton = wrapper.find('.sideNavInnerContent__closeButton')
         })
 
         it('renders the close button', () => {
-          expect(closeIcon.exists()).toEqual(true)
+          expect(closeButton.exists()).toEqual(true)
+
+          const closeButtonIcon = closeButton.find('img')
+          expect(closeButtonIcon.attributes().src).toEqual(
+            '@/assets/images/mobile/CloseIcon.svg'
+          )
         })
 
         it('emits the event "close" when clicked', () => {
-          closeIcon.trigger('click')
+          closeButton.trigger('click')
 
           expect(wrapper.emitted().close).toBeTruthy()
         })

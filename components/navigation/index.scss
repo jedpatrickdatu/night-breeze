@@ -51,7 +51,7 @@
                 }
             }
 
-            .fbLink {
+            .facebookLinkButton {
                 grid-column: 12 / 13;
 
                 &__fbLogo {
@@ -61,7 +61,7 @@
             }
         }
         
-        &__hamburgerBtn {
+        &__hamburgerButton {
             grid-column: 12 / 13;
             background: none;
             border: none;
