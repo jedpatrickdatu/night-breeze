@@ -16,7 +16,8 @@
   "dependencies": {
     "jest-transform-stub": "^2.0.0",
     "node-sass": "^4.13.0",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.11.0",
+    "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

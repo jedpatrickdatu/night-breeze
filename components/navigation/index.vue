@@ -6,7 +6,7 @@
       </nuxt-link>
       <NavLinks />
       <button @click="openSideNav" class="content__hamburgerButton">
-        <img src="@/assets/images/mobile/HamburgerMenu.svg" />
+        <HamburgerMenu />
       </button>
       <SideNav :is-open="isSideNavOpen" @close="closeSideNav" />
     </div>
@@ -16,12 +16,14 @@
 <script>
 import SideNav from './SideNav.vue'
 import NavLinks from './NavLinks.vue'
+import HamburgerMenu from '@/assets/images/mobile/HamburgerMenu.svg'
 
 export default {
   name: 'Navigation',
   components: {
     SideNav,
-    NavLinks
+    NavLinks,
+    HamburgerMenu
   },
   data() {
     return {

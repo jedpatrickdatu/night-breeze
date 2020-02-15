@@ -22,18 +22,19 @@
       class="facebookLinkButton"
       href="https://www.facebook.com/NightBreezeSalon/"
     >
-      <img
-        class="facebookLinkButton__fbLogo"
-        src="@/assets/images/FBLogo.svg"
-      />
+      <FBLogo class="facebookLinkButton__icon" />
     </a>
   </div>
 </template>
 
 <script>
+import FBLogo from '@/assets/images/FBLogo.svg'
+
 export default {
   name: 'NavLinks',
-  components: {},
+  components: {
+    FBLogo
+  },
   methods: {
     close() {
       this.$emit('close')

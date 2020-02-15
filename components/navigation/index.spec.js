@@ -36,15 +36,10 @@ describe('Navigation', () => {
   })
 
   describe('hamburger button', () => {
-    it('renders the hamburger button', () => {
+    it('renders', () => {
       const hamburgerButton = wrapper.find('Button.content__hamburgerButton')
 
       expect(hamburgerButton.exists()).toEqual(true)
-
-      const hamburgerButtonIcon = hamburgerButton.find('img')
-      expect(hamburgerButtonIcon.attributes().src).toEqual(
-        '@/assets/images/mobile/HamburgerMenu.svg'
-      )
     })
 
     it('sets the variable isSideNavOpen to true when clicked', () => {

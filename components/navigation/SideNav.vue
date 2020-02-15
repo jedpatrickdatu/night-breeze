@@ -5,7 +5,7 @@
       <transition name="slide-side">
         <div v-if="isOpen" class="sideNavInnerContent">
           <button @click="close" class="sideNavInnerContent__closeButton">
-            <img src="@/assets/images/mobile/CloseIcon.svg" />
+            <CloseIcon />
           </button>
           <NavLinks @close="close" />
         </div>
@@ -16,10 +16,12 @@
 
 <script>
 import NavLinks from './NavLinks.vue'
+import CloseIcon from '@/assets/images/mobile/CloseIcon.svg'
 
 export default {
   name: 'SideNav',
   components: {
+    CloseIcon,
     NavLinks
   },
   props: {

@@ -54,10 +54,11 @@
             .facebookLinkButton {
                 grid-column: 12 / 13;
 
-                &__fbLogo {
+                &__icon {
                     height: 30px;
-                    margin-top: 4px;
                 }
+                
+
             }
         }
         
