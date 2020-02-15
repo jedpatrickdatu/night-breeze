@@ -42,5 +42,5 @@ export default {
 </script>
 
 <style lang="sass">
-@import './index.scss';
+@import './Navigation.scss';
 </style>

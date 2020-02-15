@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import Default from './default.vue'
-import Navigation from '@/components/Navigation'
+import Navigation from '~/components/Navigation/Navigation.vue'
 
 describe('Default', () => {
   const wrapper = shallowMount(Default, {

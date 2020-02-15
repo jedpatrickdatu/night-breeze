@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import NavLinks from './NavLinks.vue'
 import SideNav from './SideNav.vue'
-import Navigation from './'
+import Navigation from './Navigation.vue'
 
 describe('Navigation', () => {
   let wrapper
