@@ -157,12 +157,13 @@
                 font-weight: 500;
                 padding: 12px 20px;
                 grid-column: 1 / 14;
-                grid-row: 10 / 12;
+                grid-row: 9 / 12;
 
                 @media (max-width: 900px) {
                     border-radius: 9px;
                     font-size: 14px;
                     padding: 9px 15px;
+                    grid-row: 10 / 12;
                 }
 
                 @media (max-width: 480px) {
