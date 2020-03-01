@@ -1,8 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
-import HomepageHero from './HomepageHero.vue'
+import Hero from './Hero.vue'
 
-describe('HomepageHero', () => {
-  const wrapper = shallowMount(HomepageHero)
+describe('Hero', () => {
+  const wrapper = shallowMount(Hero)
 
   it('renders the logo', () => {
     const logo = wrapper.find('.headline__logo')

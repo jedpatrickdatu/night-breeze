@@ -17,7 +17,7 @@
             position: fixed;
             top: 0;
             right: 0;
-            grid-template: repeat(12, 12fr) / repeat(12, 1fr);
+            grid-template: repeat(12, 1fr) / repeat(12, 1fr);
             height: 100%;
             width: 300px;
             background-color: $white;

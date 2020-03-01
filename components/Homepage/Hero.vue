@@ -18,11 +18,11 @@
 
 <script>
 export default {
-  name: 'HomepageHero',
+  name: 'Hero',
   components: {}
 }
 </script>
 
 <style lang="sass" scoped>
-@import './HomepageHero.scss';
+@import './Hero.scss';
 </style>

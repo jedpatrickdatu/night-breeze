@@ -1,12 +1,12 @@
 <template>
-  <HomepageHero />
+  <Homepage />
 </template>
 
 <script>
-import HomepageHero from '@/components/homepage/HomepageHero'
+import Homepage from '@/components/Homepage/Homepage'
 export default {
   components: {
-    HomepageHero
+    Homepage
   }
 }
 </script>
