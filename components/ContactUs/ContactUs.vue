@@ -1,0 +1,66 @@
+<template>
+  <div class="contactUs">
+    <div class="content">
+      <div class="texts">
+        <div class="headline">
+          Come Visit Us!
+        </div>
+        <div class="storeDetails">
+          <div class="section">
+            <div class="header">
+              Make an appointment
+            </div>
+            <div class="body">
+              Phone: 02 627 7735
+            </div>
+          </div>
+          <div class="section">
+            <div class="header">
+              Location
+            </div>
+            <div class="body">
+              <p>Beside Al Ahalia Hospital, Building 6</p>
+              <p>Hamdan Bin Mohammed St.</p>
+              <p>Abu Dhabi, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="section">
+            <div class="header">
+              Hours
+            </div>
+            <div class="body">
+              <p>Saturday to Sunday - 9AM to 9PM</p>
+              <p>Friday - 1PM to 9PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <gmap-map :center="center" :map-type-id="mapTypeId" :zoom="5">
+      <gmap-marker
+        v-for="(item, index) in markers"
+        :key="index"
+        :position="item.position"
+        @click="center = item.position"
+      />
+    </gmap-map>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'ContactUs',
+  components: {},
+  data() {
+    return {
+      center: { lat: 24.487983, lng: 54.360029 },
+      mapTypeId: 'terrain',
+      markers: []
+    }
+  }
+}
+</script>
+
+<style lang="sass" scoped>
+@import './ContactUs.scss';
+</style>

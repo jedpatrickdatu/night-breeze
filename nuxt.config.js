@@ -1,5 +1,8 @@
 export default {
   mode: 'universal',
+  env: {
+    VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
+  },
   /*
    ** Headers of the page
    */
@@ -27,7 +30,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@/plugins/google-maps'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -38,7 +41,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['nuxt-svg-loader'],
+  modules: ['nuxt-svg-loader', '@nuxtjs/dotenv'],
   /*
    ** Build configuration
    */

@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <h2>This page is under construction :)</h2>
-  </div>
+  <ContactUs />
 </template>
 
 <script>
-export default {}
+import ContactUs from '@/components/ContactUs/ContactUs'
+export default {
+  components: {
+    ContactUs
+  }
+}
 </script>
 
 <style></style>

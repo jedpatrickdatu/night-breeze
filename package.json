@@ -17,9 +17,11 @@
     "jest-transform-stub": "^2.0.0",
     "node-sass": "^4.13.0",
     "nuxt": "^2.11.0",
-    "nuxt-svg-loader": "^1.2.0"
+    "nuxt-svg-loader": "^1.2.0",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
