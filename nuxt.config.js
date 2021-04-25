@@ -41,7 +41,17 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['nuxt-svg-loader', '@nuxtjs/dotenv'],
+  modules: [
+    'nuxt-svg-loader',
+    '@nuxtjs/dotenv',
+    [
+      'nuxt-gmaps',
+      {
+        key: 'AIzaSyCW7IRcUCPwPOrJIFIzt8gRvJvhB2RTSYs'
+        // you can use libraries: ['places']
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */
