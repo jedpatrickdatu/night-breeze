@@ -24,6 +24,7 @@
     margin: 36px auto;
     max-width: 1024px;
     width: 100%;
+    justify-content: space-between;
 
     .texts {
       width: 48%;
@@ -88,6 +89,9 @@
     }
 
     .mapContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 48%;
     }
   }

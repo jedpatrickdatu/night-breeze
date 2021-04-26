@@ -36,44 +36,20 @@
         </div>
       </div>
       <div class="mapContainer">
-        <GMap
-          ref="gMap"
-          :cluster="{ options: { styles: clusterStyle } }"
-          :center="{ lat: locations[0].lat, lng: locations[0].lng }"
-          :options="{ fullscreenControl: false, styles: mapStyle }"
-          :zoom="6"
-          language="en"
+        <GmapMap
+          :center="NBPoint"
+          :zoom="18"
+          map-type-id="terrain"
+          style="width: 500px; height: 500px; border: 1px solid #000000"
         >
-          <GMapMarker
-            v-for="location in locations"
-            :key="location.id"
-            :position="{ lat: location.lat, lng: location.lng }"
-            :options="{
-              icon:
-                location === currentLocation ? pins.selected : pins.notSelected
-            }"
-            @click="currentLocation = location"
-          >
-            <GMapInfoWindow :options="{ maxWidth: 200 }">
-              <code> lat: {{ location.lat }}, lng: {{ location.lng }} </code>
-            </GMapInfoWindow>
-          </GMapMarker>
-          <GMapCircle :options="circleOptions" />
-        </GMap>
-        <!-- <div id="map"></div>
-        <script
-          async
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW7IRcUCPwPOrJIFIzt8gRvJvhB2RTSYs&callback=initMap"
-        ></script> -->
+          <GmapMarker
+            :position="NBPoint"
+            :clickable="true"
+            :draggable="true"
+            title="Night Breeze Ladies Salon"
+          />
+        </GmapMap>
       </div>
-      <!-- <gmap-map :center="center" :map-type-id="mapTypeId" :zoom="5">
-        <gmap-marker
-          v-for="(item, index) in markers"
-          :key="index"
-          :position="item.position"
-          @click="center = item.position"
-        />
-      </gmap-map> -->
     </div>
   </div>
 </template>
@@ -83,36 +59,7 @@ export default {
   name: 'ContactUs',
   components: {},
   data: () => ({
-    currentLocation: {},
-    circleOptions: {},
-    locations: [
-      {
-        lat: 44.933076,
-        lng: 15.629058
-      },
-      {
-        lat: 45.815,
-        lng: '15.9819'
-      },
-      {
-        lat: '45.12',
-        lng: '16.21'
-      }
-    ],
-    pins: {
-      selected: 'data:image/png;base64,iVBORw0KGgo...',
-      notSelected: 'data:image/png;base64,iVBORw0KGgo...'
-    },
-    mapStyle: [],
-    clusterStyle: [
-      {
-        url:
-          'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m1.png',
-        width: 56,
-        height: 56,
-        textColor: '#fff'
-      }
-    ]
+    NBPoint: { lat: 24.488276194961433, lng: 54.36007201534355 }
   })
 }
 </script>
