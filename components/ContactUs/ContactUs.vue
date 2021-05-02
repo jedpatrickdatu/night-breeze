@@ -1,7 +1,7 @@
 <template>
   <div class="contactUs">
     <div class="content">
-      <div class="texts">
+      <div class="column texts">
         <div class="headline">
           Come Visit Us!
         </div>
@@ -35,19 +35,20 @@
           </div>
         </div>
       </div>
-      <div class="mapContainer">
+      <div class="column mapContainer">
         <GmapMap
           :center="NBPoint"
           :zoom="18"
           map-type-id="terrain"
-          style="width: 500px; height: 500px; border: 1px solid #000000"
+          style="width: 100%; height: 500px; border: 1px solid #000000"
         >
           <GmapMarker
             :position="NBPoint"
             :clickable="true"
             :draggable="true"
-            title="Night Breeze Ladies Salon"
+            :label="markerLabel"
           />
+          >
         </GmapMap>
       </div>
     </div>
@@ -59,7 +60,14 @@ export default {
   name: 'ContactUs',
   components: {},
   data: () => ({
-    NBPoint: { lat: 24.488276194961433, lng: 54.36007201534355 }
+    NBPoint: { lat: 24.488276194961433, lng: 54.36007201534355 },
+    markerLabel: {
+      text: 'Night Breeze Ladies Salon',
+      color: 'black',
+      fontWeight: 'bold',
+      fontSize: '12px',
+      marginRight: '20px'
+    }
   })
 }
 </script>
