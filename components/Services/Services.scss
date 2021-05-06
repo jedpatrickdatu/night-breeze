@@ -1,0 +1,96 @@
+@import '~/assets/colors.scss';
+
+.services {
+  background-color: $secondary-color--dark;
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    margin: 36px auto;
+    max-width: 1080px;
+    width: 100%;
+    justify-content: space-between;
+
+    @media (max-width: 1080px) {
+      width: 910px;
+    }
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      margin: 36px;
+    }
+
+    @media (max-width: 450px) {
+      width: 768px;
+    }
+
+    .column {
+      width: 500px;
+
+      @media (max-width: 1080px) {
+        width: 420px;
+      }
+
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+
+    .texts {
+      .headline {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 36px;
+      }
+
+      .serviceList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .service {
+          margin-bottom: 30px;
+          padding-bottom: 30px;
+          width: 360px;
+  
+          .serviceType {
+            border-bottom: 2px solid $white;
+            color: $white;
+            font-size: 28px;
+            font-weight: 700;
+            padding-bottom: 10px;
+          }
+  
+          .subservice {
+            display: flex;
+            color: $white;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-top: 12px;
+            
+            .price {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .mapContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      @media (max-width: 900px) {
+        padding-bottom: 36px;
+      }
+    }
+  }
+}

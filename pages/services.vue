@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <h2>This page is under construction :)</h2>
-  </div>
+  <Services />
 </template>
 
 <script>
-export default {}
+import Services from '@/components/Services/Services'
+export default {
+  components: {
+    Services
+  }
+}
 </script>
 
 <style></style>
