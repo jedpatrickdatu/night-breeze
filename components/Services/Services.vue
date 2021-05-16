@@ -1,35 +1,44 @@
 <template>
   <div class="services">
     <div class="content">
-      <div class="column texts">
-        <div class="headline">
-          SERVICES
-        </div>
-        <div class="serviceList">
+      <div class="headline">
+        SERVICES
+      </div>
+      <div class="serviceList">
+        <div
+          v-for="service in services"
+          v-bind:key="service.type"
+          class="service"
+        >
+          <div class="serviceType">
+            {{ service.type }}
+          </div>
           <div
-            v-for="service in services"
-            v-bind:key="service.type"
-            class="service"
+            v-for="subservice in service.subservices"
+            v-bind:key="subservice.name"
+            class="subservice"
           >
-            <div class="serviceType">
-              {{ service.type }}
+            <div class="serviceName">
+              {{ subservice.name }}
             </div>
-            <div
-              v-for="subservice in service.subservices"
-              v-bind:key="subservice.name"
-              class="subservice"
-            >
-              <div class="serviceName">
-                {{ subservice.name }}
-              </div>
-              <div class="price">
-                {{ subservice.price }}
-              </div>
+            <div class="price">
+              {{ subservice.price }}
             </div>
           </div>
         </div>
       </div>
-      <div class="column mapContainer"></div>
+      <div class="bookBtnContainer">
+        <hr
+          class="bookLine"
+        />
+        <button
+          class="bookBtn"
+          @click="goToContactUs"
+        >
+          Book an Appointment Now
+        </button>
+        <hr class="bookLine" />
+      </div>
     </div>
   </div>
 </template>
@@ -38,6 +47,11 @@
 export default {
   name: 'Services',
   components: {},
+   methods: {
+   goToContactUs() {
+    this.$router.push('/contact-us'); 
+  }
+  },
   data: () => ({
     services: [
       {

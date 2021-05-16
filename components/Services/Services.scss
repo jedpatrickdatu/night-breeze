@@ -8,7 +8,7 @@
 
   .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 36px auto;
     max-width: 1080px;
     width: 100%;
@@ -27,69 +27,75 @@
       width: 768px;
     }
 
-    .column {
-      width: 500px;
-
-      @media (max-width: 1080px) {
-        width: 420px;
-      }
-
-      @media (max-width: 900px) {
-        width: 100%;
-      }
+    .headline {
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 36px;
     }
 
-    .texts {
-      .headline {
-        color: $white;
-        display: flex;
-        flex-direction: column;
-        font-size: 40px;
-        font-weight: 800;
-        margin-bottom: 36px;
-      }
+    .serviceList {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
 
-      .serviceList {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+      .service {
+        margin-bottom: 30px;
+        width: 340px;
+        height: auto;
 
-        .service {
-          margin-bottom: 30px;
-          padding-bottom: 30px;
-          width: 360px;
-  
-          .serviceType {
-            border-bottom: 2px solid $white;
-            color: $white;
-            font-size: 28px;
-            font-weight: 700;
-            padding-bottom: 10px;
-          }
-  
-          .subservice {
-            display: flex;
-            color: $white;
-            flex-direction: row;
-            justify-content: space-between;
-            font-size: 20px;
-            margin-top: 12px;
-            
-            .price {
-              color: $primary-color;
-            }
+        .serviceType {
+          border-bottom: 2px solid $white;
+          color: $white;
+          font-size: 28px;
+          font-weight: 700;
+          padding-bottom: 20px;
+        }
+
+        .subservice {
+          display: flex;
+          color: $white;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 16px;
+          margin-top: 12px;
+          
+          .price {
+            color: $primary-color;
           }
         }
       }
     }
 
-    .mapContainer {
+    .bookBtnContainer {
+      align-items: center;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      margin-top: 12px;
       
-      @media (max-width: 900px) {
-        padding-bottom: 36px;
+      .bookBtn {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 12px;
+        color: $white;
+        font-size: 16px;
+        font-family: 'Segoe UI', 'Source Sans Pro', -apple-system,
+          BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        font-weight: 500;
+        padding: 12px 20px;
+        min-width: 300px;
+        margin: 0 20px;
+      }
+
+      .bookLine {
+        border-top: 2px solid $primary-color--light;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        height: 1px;
+        width: 100%;
       }
     }
   }
