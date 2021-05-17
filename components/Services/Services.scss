@@ -23,10 +23,6 @@
       margin: 36px;
     }
 
-    @media (max-width: 450px) {
-      width: 768px;
-    }
-
     .headline {
       color: $white;
       display: flex;
@@ -46,6 +42,14 @@
         margin-bottom: 30px;
         width: 340px;
         height: auto;
+
+        @media (max-width: 1080px) {
+          width: 400px;
+        }
+
+        @media (max-width: 810px) {
+          width: 100%;
+        }
 
         .serviceType {
           border-bottom: 2px solid $white;
@@ -87,6 +91,18 @@
         padding: 12px 20px;
         min-width: 300px;
         margin: 0 20px;
+
+        @media (max-width: 900px) {
+          border-radius: 9px;
+          font-size: 14px;
+          padding: 9px 15px;
+        }
+
+        @media (max-width: 450px) {
+          border-radius: 12px;
+          font-size: 20px;
+          padding: 16px 20px;
+        }
       }
 
       .bookLine {
@@ -96,6 +112,10 @@
         border-bottom: none;
         height: 1px;
         width: 100%;
+
+        @media (max-width: 450px) {
+          visibility: hidden;
+        }
       }
     }
   }
