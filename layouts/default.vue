@@ -2,16 +2,19 @@
   <div class="nightBreeze">
     <Navigation />
     <nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation/Navigation'
+import Footer from '@/components/Footer/Footer'
 
 export default {
   name: 'Default',
   components: {
-    Navigation
+    Navigation,
+    Footer
   }
 }
 </script>
