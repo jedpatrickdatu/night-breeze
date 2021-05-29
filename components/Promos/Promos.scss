@@ -1,0 +1,131 @@
+@import '~/assets/colors.scss';
+
+.promos {
+  background-color: $secondary-color--dark;
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 36px auto;
+    max-width: 1080px;
+    width: 100%;
+    justify-content: space-between;
+
+    @media (max-width: 1080px) {
+      width: 910px;
+    }
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      margin: 36px;
+    }
+
+    .header {
+      color: $white;
+      margin-bottom: 36px;
+
+      .headline {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 8px;
+      }
+  
+      .date {
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+
+      .starting-price {
+
+      }
+    }
+
+    .promoList {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .promo {
+        margin-bottom: 30px;
+        width: 340px;
+        height: auto;
+
+        @media (max-width: 1080px) {
+          width: 400px;
+        }
+
+        @media (max-width: 810px) {
+          width: 100%;
+        }
+
+        .packageName {
+          border-bottom: 2px solid $white;
+          color: $white;
+          font-size: 28px;
+          font-weight: 700;
+          padding-bottom: 20px;
+        }
+
+        .service {
+          display: flex;
+          color: $white;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 16px;
+          margin-top: 12px;
+        }
+      }
+    }
+
+    .bookBtnContainer {
+      align-items: center;
+      display: flex;
+      margin-top: 12px;
+      
+      .bookBtn {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 12px;
+        color: $white;
+        font-size: 16px;
+        font-family: 'Segoe UI', 'Source Sans Pro', -apple-system,
+          BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        font-weight: 500;
+        padding: 12px 20px;
+        min-width: 300px;
+        margin: 0 20px;
+
+        @media (max-width: 900px) {
+          border-radius: 9px;
+          font-size: 14px;
+          padding: 9px 15px;
+        }
+
+        @media (max-width: 450px) {
+          border-radius: 12px;
+          font-size: 20px;
+          padding: 16px 20px;
+        }
+      }
+
+      .bookLine {
+        border-top: 2px solid $primary-color--light;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        height: 1px;
+        width: 100%;
+
+        @media (max-width: 450px) {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}

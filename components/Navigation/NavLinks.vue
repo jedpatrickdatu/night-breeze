@@ -4,7 +4,13 @@
       @click.native="close"
       class="navLinks__textLink navLinks__textLink--servicesLink"
       to="/services"
-      >Our Services</nuxt-link
+      >Services</nuxt-link
+    >
+    <nuxt-link
+      @click.native="close"
+      class="navLinks__textLink navLinks__textLink--promosLink"
+      to="/promos"
+      >Promos</nuxt-link
     >
     <nuxt-link
       @click.native="close"
