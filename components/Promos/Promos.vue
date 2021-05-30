@@ -9,25 +9,32 @@
           Jul 1 - Aug 31, 2021
         </div>
         <div class="starting-price">
-          Starting at only 100 AED
+          Beauty and relaxation packages starting at 100 AED
         </div>
       </div>
       <div class="promoList">
         <div
           v-for="promo in promos"
-          v-bind:key="promo.packageName"
+          v-bind:key="promo.name"
           class="promo"
         >
-          <div class="packageName">
-            {{ promo.packageName }}
+          <div class="promoHeader">
+            <div class="name">
+              {{ promo.name }}
+            </div>
+            <div class="price">
+              {{ promo.price }}
+            </div>
           </div>
-          <div
-            v-for="service in promo.services"
-            v-bind:key="service"
-            class="service"
-          >
-            <div class="service">
-              {{ service }}
+          <div class="serviceList">
+            <div
+              v-for="service in promo.services"
+              v-bind:key="service"
+              class="service"
+            >
+              <div class="service">
+                {{ service }}
+              </div>
             </div>
           </div>
         </div>
@@ -60,7 +67,7 @@ export default {
   data: () => ({
     promos: [
       {
-        packageName: 'Package A',
+        name: 'Package A',
         price: '100 AED',
         services: [
           'Roots or highlights',
@@ -74,7 +81,7 @@ export default {
         ]
       },
       {
-        packageName: 'Package B',
+        name: 'Package B',
         price: '100 AED',
         services: [
           'Moroccan bath',
@@ -88,7 +95,7 @@ export default {
         ]
       },
       {
-        packageName: 'Package C',
+        name: 'Package C',
         price: '100 AED',
         services: [
           'Aloe Vera treatment',
@@ -102,7 +109,7 @@ export default {
         ]
       },
       {
-        packageName: 'Package D',
+        name: 'Package D',
         price: '100 AED',
         services: [
           'Full hair color',
@@ -114,7 +121,7 @@ export default {
         ]
       },
       {
-        packageName: 'Package E',
+        name: 'Package E',
         price: '100 AED',
         services: [
           'Moroccan bath',
@@ -127,7 +134,7 @@ export default {
         ]
       },
       {
-        packageName: 'Package F',
+        name: 'Package F',
         price: '100 AED',
         services: [
           'Full leg waxing',
@@ -137,7 +144,7 @@ export default {
         ]
       },
       {
-        packageName: 'Package G',
+        name: 'Package G',
         price: '150 AED',
         services: [
           'Moroccan bath',
