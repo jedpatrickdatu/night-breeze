@@ -40,10 +40,6 @@
         font-weight: 700;
         margin-bottom: 4px;
       }
-
-      .starting-price {
-
-      }
     }
 
     .promoList {
@@ -60,10 +56,18 @@
         padding: 16px;
 
         @media (max-width: 1080px) {
-          width: 400px;
+          width: 430px;
+        }
+
+        @media (max-width: 900px) {
+          width: 380px;
         }
 
         @media (max-width: 810px) {
+          width: 330px;
+        }
+
+        @media (max-width: 768px) {
           width: 100%;
         }
 

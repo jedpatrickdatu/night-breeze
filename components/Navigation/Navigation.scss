@@ -26,9 +26,13 @@
 
         .navLinks {
             display: grid;
-            grid-column: 6 / 13;
+            grid-column: 5 / 13;
             align-items: center;
             grid-template-columns: repeat(12, 1fr);
+
+            @media (max-width: 810px) {
+              grid-column: 3 / 13;
+          }
 
             @media (max-width: 450px) {
                 display: none;
