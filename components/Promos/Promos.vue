@@ -59,10 +59,10 @@
 export default {
   name: 'Promos',
   components: {},
-   methods: {
-   goToContactUs() {
-    this.$router.push('/contact-us'); 
-  }
+  methods: {
+    goToContactUs() {
+      this.$router.push('/contact-us'); 
+    }
   },
   data: () => ({
     promos: [
