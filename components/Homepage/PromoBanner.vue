@@ -1,34 +1,31 @@
 <template>
     <div class="promoBanner">
-        <div class="mainContentContainer">
-            <div class="mainContent">
-                <div class="headlineContainer">
-                    <div class="headline">
-                        SUMMER PROMO
-                    </div>
-                    <div class="date">
-                        Jul 1 - Aug 31, 2021
-                    </div>
+        <div class="mainContent">
+            <div class="headlineContainer">
+                <div class="headline">
+                    SUMMER PROMO
                 </div>
-
-                <div class="details">
-                    <div class="slogan">
-                        Beauty and relaxation packages starting at
-                    </div>
-
-                    <button
-                        class="seePackagesBtn"
-                        @click="goToPromos"
-                    >
-                        See Packages
-                    </button>
+                <div class="date">
+                    Jul 1 - Aug 31, 2021
                 </div>
-
-                <div class="price">
-                    <div class="priceNumber">100<span class="priceCurrency">AED</span></div>
-                </div>
-
             </div>
+
+            <div class="details">
+                <div class="slogan">
+                    Beauty and relaxation packages starting at
+                </div>
+            </div>
+
+            <div class="price">
+                <div class="priceNumber">100<span class="priceCurrency">AED</span></div>
+            </div>
+
+            <button
+                class="seePackagesBtn"
+                @click="goToPromos"
+            >
+                See Packages
+            </button>
         </div>
     </div>
 </template>
