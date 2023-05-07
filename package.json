@@ -16,7 +16,7 @@
   "dependencies": {
     "jest-transform-stub": "^2.0.0",
     "node-sass": "^4.13.0",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.16.3",
     "nuxt-gmaps": "^1.2.10",
     "nuxt-svg-loader": "^1.2.0",
     "vue2-google-maps": "^0.10.7"
